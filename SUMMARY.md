@@ -1,13 +1,6 @@
 # Table of contents
 
-* [🏠 /home/sfoffo/.pt-notes](README.md)
-* [🏳️ Contributions](contributions/README.md)
-  * [2024 Contributions](contributions/2024-contributions/README.md)
-    * [CVE-2024-42845](contributions/2024-contributions/cve-2024-42845.md)
-    * [CVE-2024-41819](contributions/2024-contributions/cve-2024-41819.md)
-    * [CVE-2024-41943](contributions/2024-contributions/cve-2024-41943.md)
-* [🍀 Support this Project](https://buymeacoffee.com/sfoffo)
-* [📂 Active Directory](active-directory/README.md)
+* [📂 Active Directory](README.md)
   * [Initial Access](active-directory/initial-access.md)
   * [Internal Enumeration & Lateral Movement](active-directory/internal-enumeration-and-lateral-movement.md)
   * [Privilege Escalation to Domain Admin using Known Exploits](active-directory/privilege-escalation-to-domain-admin-using-known-exploits.md)
