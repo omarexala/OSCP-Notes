@@ -5,6 +5,7 @@
   * [Internal Enumeration & Lateral Movement](active-directory/internal-enumeration-and-lateral-movement.md)
   * [Privilege Escalation to Domain Admin using Known Exploits](active-directory/privilege-escalation-to-domain-admin-using-known-exploits.md)
   * [Domain Trusts](active-directory/domain-trusts.md)
+  * [Checklist](active-directory/checklist.md)
 * [🐧 Linux Privilege Escalation](linux-privilege-escalation/README.md)
   * [Enumerating Attack Vectors](linux-privilege-escalation/enumerating-attack-vectors.md)
   * [Privileged Groups](linux-privilege-escalation/privileged-groups.md)
