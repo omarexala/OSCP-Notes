@@ -17,6 +17,7 @@
 
 **Deep Dive**
 
+* Mimikatz on NTAUTHORITY/System
 * Bloodhound
 
 **AD Authentication Attacks**
