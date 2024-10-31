@@ -274,7 +274,7 @@ we need to synchronize the time of the Kali machine with the domain controller. 
 
 **Performing PtT Attacks:**
 
-1. Check the [Kerberoasting Section](internal-enumeration-and-lateral-movement.md#kerberoasting) to check how to request tickets
+1. Check the [Kerberoasting Section](./#kerberoasting) to check how to request tickets
 2. PtT using Rubeus: `Rubeus.exe asktgt /domain:domain.name /user:username /rc4:hash /ptt`
 3. PtT using Rubeus with .kirbi file: `Rubeus.exe ptt /ticket:file.kirbi`
 4. PtT using Rubeus - alternative:
@@ -295,7 +295,7 @@ Since Microsoft's implementation of Kerberos makes use of single sign-on, passwo
 
 Since the LSASS process is part of the operating system and runs as SYSTEM, we need SYSTEM (or local administrator) permissions to gain access to the hashes stored on a target. To make things even more tricky, the data structures used to store the hashes in memory are not publicly documented, and they are also encrypted with an LSASS-stored key.
 
-Nevertheless, since the extraction of cached credentials is a large attack vector against Windows and Active Directory, several tools have been created to extract the hashes. The most popular of these tools is Mimikatz.&#x20;
+Nevertheless, since the extraction of cached credentials is a large attack vector against Windows and Active Directory, several tools have been created to extract the hashes. The most popular of these tools is Mimikatz.
 
 From Mimikatz, we can run `sekurlsa::logonpasswords` to dump the credentials of all logged-on users with the Sekurlsa module. This should dump hashes for all users logged on to the current workstation or server, including remote logins like Remote Desktop sessions
 
@@ -385,7 +385,7 @@ Refer to the previous section
    * `$Cred = New-Object System.Management.Automation.PSCredential('DOMAIN\validuser', $SecPassword)`
 2. Create a fake SPN:
    * `Set-DomainObject -Credential $Cred -Identity targetuser -SET @{serviceprincipalname='notahacker/LEGIT'} -Verbose`
-3. Kerberoast with Rubeus or any alternatives, see the [Kerberoasting Section](internal-enumeration-and-lateral-movement.md#kerberoasting)
+3. Kerberoast with Rubeus or any alternatives, see the [Kerberoasting Section](./#kerberoasting)
    * `.\Rubeus.exe kerberoast /user:targetuser /nowrap`
 
 ***

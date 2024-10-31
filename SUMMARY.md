@@ -2,7 +2,8 @@
 
 * [📂 Active Directory](README.md)
   * [Initial Access](active-directory/initial-access.md)
-  * [Internal Enumeration & Lateral Movement](active-directory/internal-enumeration-and-lateral-movement.md)
+  * [Internal Enumeration & Lateral Movement](active-directory/internal-enumeration-and-lateral-movement/README.md)
+    * [BloodHound](active-directory/internal-enumeration-and-lateral-movement/bloodhound.md)
   * [Privilege Escalation to Domain Admin using Known Exploits](active-directory/privilege-escalation-to-domain-admin-using-known-exploits.md)
   * [Domain Trusts](active-directory/domain-trusts.md)
   * [Checklist](active-directory/checklist.md)
