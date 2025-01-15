@@ -77,3 +77,9 @@
 
 1. From the target machine: `ncat -l -p 8000 --recv-only > SharpKatz.exe`
 2. From attacker machine: `ncat --send-only target-ip 8000 < SharpKatz.exe`
+
+***
+
+## **Additional Resources**
+
+**Blog:** [**https://medium.com/@PenTest\_duck/almost-all-the-ways-to-file-transfer-1bd6bf710d65**](https://medium.com/@PenTest_duck/almost-all-the-ways-to-file-transfer-1bd6bf710d65)
